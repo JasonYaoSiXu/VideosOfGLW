@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="10117" systemVersion="15G31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="gTV-IL-0wX" customClass="CollectionLikeCollectionViewCell">
+            <rect key="frame" x="0.0" y="0.0" width="80" height="93"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                <rect key="frame" x="0.0" y="0.0" width="80" height="93"/>
+                <subviews>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="4" translatesAutoresizingMaskIntoConstraints="NO" id="LYA-Cm-deh" userLabel="avartImageView">
+                        <rect key="frame" x="0.0" y="0.0" width="60" height="47"/>
+                    </imageView>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="iPE-QF-RIi" userLabel="nameLabel">
+                        <rect key="frame" x="0.0" y="52" width="60" height="16"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                        <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="¥159" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="4EJ-KT-RP8" userLabel="priceLabel">
+                        <rect key="frame" x="0.0" y="70" width="60" height="16"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                        <color key="textColor" red="1" green="0.5" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                </subviews>
+                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+            </view>
+            <constraints>
+                <constraint firstAttribute="bottom" secondItem="LYA-Cm-deh" secondAttribute="bottom" constant="46" id="0Hc-oL-IR4"/>
+                <constraint firstItem="4EJ-KT-RP8" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" id="2jq-ao-oiz"/>
+                <constraint firstItem="LYA-Cm-deh" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" id="8c4-Sd-Sy0"/>
+                <constraint firstAttribute="trailing" secondItem="iPE-QF-RIi" secondAttribute="trailing" constant="20" id="9do-Am-idI"/>
+                <constraint firstItem="4EJ-KT-RP8" firstAttribute="top" secondItem="iPE-QF-RIi" secondAttribute="bottom" constant="2" id="E2m-Gt-7OJ"/>
+                <constraint firstItem="LYA-Cm-deh" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" id="E71-8b-3Kh"/>
+                <constraint firstAttribute="trailing" secondItem="LYA-Cm-deh" secondAttribute="trailing" constant="20" id="Hby-Kk-KjJ"/>
+                <constraint firstItem="iPE-QF-RIi" firstAttribute="top" secondItem="LYA-Cm-deh" secondAttribute="bottom" constant="5" id="Ief-mJ-dkK"/>
+                <constraint firstItem="iPE-QF-RIi" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" id="MfB-hH-WVY"/>
+                <constraint firstAttribute="trailing" secondItem="4EJ-KT-RP8" secondAttribute="trailing" constant="20" id="Qho-AI-F4L"/>
+            </constraints>
+            <connections>
+                <outlet property="avartImageView" destination="LYA-Cm-deh" id="JUK-d6-G41"/>
+                <outlet property="nameLabel" destination="iPE-QF-RIi" id="D0N-Z0-QLX"/>
+                <outlet property="priceLabel" destination="4EJ-KT-RP8" id="vwe-Xa-gfm"/>
+            </connections>
+            <point key="canvasLocation" x="387" y="298.5"/>
+        </collectionViewCell>
+    </objects>
+    <resources>
+        <image name="4" width="720" height="453"/>
+    </resources>
+</document>
